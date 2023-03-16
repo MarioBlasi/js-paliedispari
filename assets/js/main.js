@@ -73,13 +73,28 @@ Chiedere all’utente di inserire una parola Creare una funzione per capire se l
  parola inserita è palindroma */
 
 // utilizziamo metodo REVERSE per verificare se la parola
-//presa in input è palindroma
+//presa in input è palindroma e il metodo split e quello join
 
 //-------------ESERCIZIO NUMERO 1 --PALINDROMO -------------//
 
-let parola = prompt("inserisci una parola");
-console.log(parola);
+// let parola = prompt("inserisci una parola");
+// console.log(parola);
 
-function reverseString(parola) {
-  return parola;
+// function reverseString(parola) {
+//   return parola;
+// }
+
+let parola = prompt("inserisci una parola");
+
+let parolaInversa = invertiParola(parola);
+
+if (parola == parolaInversa) {
+  console.log("la parola è palindroma");
+} else {
+  console.log("la parola non è palindroma");
+}
+
+function invertiParola(str) {
+  let strInversa = str.split("").reverse().join("");
+  return strInversa;
 }
