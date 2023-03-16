@@ -24,7 +24,7 @@ pari o dispari (usando una funzione) Dichiariamo chi ha vinto.*/
 // Funzione per stabilire se un numero è pari o dispari                             ----------- OK
 
 // Sommiamo i due numeri
-// Stabiliamo se la somma è pari o dispari
+
 // Dichiariamo il vincitore
 
 //---------------------------------------------------------------------//
@@ -40,18 +40,30 @@ console.log(randomNumber);
 
 //-----------------L’utente sceglie pari o dispari--inserisce un numero da 1 a 5.------------//
 
-function isEven(num) {
-  if (num % 2 == 0) {
-    return true;
+// function isEven(num) {
+//   if (num % 2 == 0) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// let num = Number(prompt("inserisci il numero"));
+
+// if (isEven(num)) {
+//   console.log("hai scelto pari");
+// } else {
+//   console.log("hai scelto dispari");
+// }
+
+function P_or_D(scegli) {
+  if (scegli === "pari" || scegli === "dispari") {
+    if (numero >= 1 && numero <= 5) {
+      console.log(prompt("hai scelto" + scegli + "e il numero" + numero));
+    } else {
+      console.log(prompt("numero non valido"));
+    }
   }
-  return false;
 }
 
-let scegli = Number(prompt("inserisci un numero pari o dispari "));
+let scegli = prompt("inserisci un numero pari o dispari ");
 let numero = parseInt(prompt("inserisci un numero da 1 a 5 "));
-
-if (isEven(scegli)) {
-  console.log("hai scelto un numero pari");
-} else {
-  console.log("hai scelto un numero dispari");
-}
