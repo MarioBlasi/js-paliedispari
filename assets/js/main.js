@@ -28,6 +28,7 @@ pari o dispari (usando una funzione) Dichiariamo chi ha vinto.*/
 //---------------------------------------------------------------------//
 
 // -------------------Generiamo numero casuale per il Pc ------------------------//
+
 function getRandomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -36,37 +37,23 @@ console.log(randomNumber);
 
 //-----------------L’utente sceglie pari o dispari--inserisce un numero da 1 a 5.------------//
 
-// function isEven(num) {
-//   if (num % 2 == 0) {
-//     return true;
-//   }
-//   return false;
-// }
+let scegli = prompt("inserisci pari o dispari ");
+let numero = parseInt(prompt("inserisci un numero da 1 a 5 "));
+let risultato = numero % 2 === 0;
 
-// let num = Number(prompt("inserisci il numero"));
-
-// if (isEven(num)) {
-//   console.log("hai scelto pari");
-// } else {
-//   console.log("hai scelto dispari");
-// }
-// let scegli = prompt("inserisci pari o dispari ");
-// let numero = parseInt(prompt("inserisci un numero da 1 a 5 "));
-// let risultato = numero % 2 === 0;
-
-// if (scegli === "pari" || scegli === "dispari") {
-//   if (numero >= 1 && numero <= 5) {
-//     if ((scelta = risultato)) {
-//       console.log("hai vinto");
-//     } else {
-//       console.log("hai perso");
-//     }
-//   } else {
-//     console.log("numero non valido");
-//   }
-// } else {
-//   console.log("scelta non valida");
-// }
+if (scegli === "pari" || scegli === "dispari") {
+  if (numero >= 1 && numero <= 5) {
+    if ((scelta = risultato)) {
+      console.log("hai vinto");
+    } else {
+      console.log("hai perso");
+    }
+  } else {
+    console.log("numero non valido");
+  }
+} else {
+  console.log("scelta non valida");
+}
 
 /*
 Chiedere all’utente di inserire una parola Creare una funzione per capire se la
@@ -76,13 +63,6 @@ Chiedere all’utente di inserire una parola Creare una funzione per capire se l
 //presa in input è palindroma e il metodo split e quello join
 
 //-------------ESERCIZIO NUMERO 1 --PALINDROMO -------------//
-
-// let parola = prompt("inserisci una parola");
-// console.log(parola);
-
-// function reverseString(parola) {
-//   return parola;
-// }
 
 let parola = prompt("inserisci una parola");
 
