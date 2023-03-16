@@ -50,20 +50,36 @@ console.log(randomNumber);
 // } else {
 //   console.log("hai scelto dispari");
 // }
-let scegli = prompt("inserisci un numero pari o dispari ");
-let numero = parseInt(prompt("inserisci un numero da 1 a 5 "));
-let risultato = numero % 2 === 0;
+// let scegli = prompt("inserisci pari o dispari ");
+// let numero = parseInt(prompt("inserisci un numero da 1 a 5 "));
+// let risultato = numero % 2 === 0;
 
-if (scegli === "pari" || scegli === "dispari") {
-  if (numero >= 1 && numero <= 5) {
-    if ((scelta = risultato)) {
-      console.log("hai vinto");
-    } else {
-      console.log("hai perso");
-    }
-  } else {
-    console.log("numero non valido");
-  }
-} else {
-  console.log("scelta non valida");
+// if (scegli === "pari" || scegli === "dispari") {
+//   if (numero >= 1 && numero <= 5) {
+//     if ((scelta = risultato)) {
+//       console.log("hai vinto");
+//     } else {
+//       console.log("hai perso");
+//     }
+//   } else {
+//     console.log("numero non valido");
+//   }
+// } else {
+//   console.log("scelta non valida");
+// }
+
+/*
+Chiedere all’utente di inserire una parola Creare una funzione per capire se la
+ parola inserita è palindroma */
+
+// utilizziamo metodo REVERSE per verificare se la parola
+//presa in input è palindroma
+
+//-------------ESERCIZIO NUMERO 1 --PALINDROMO -------------//
+
+let parola = prompt("inserisci una parola");
+console.log(parola);
+
+function reverseString(parola) {
+  return parola;
 }
