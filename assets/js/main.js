@@ -3,18 +3,14 @@
 //  parola inserita è palindroma
 
 /*Pari e Dispari
-L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un numero random 
-(sempre da 1 a 5) per il computer (usando una funzione). Sommiamo
+L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+
+// Generiamo un numero random 
+(sempre da 1 a 5) per il computer (usando una funzione).
+
+Sommiamo
  i due numeri Stabiliamo se la somma dei due numeri è 
 pari o dispari (usando una funzione) Dichiariamo chi ha vinto.*/
-//-------------------------------//
-
-//strumenti :
-// prompt
-// function
-// maybe 'for'
-// if
-
 //-------------------------------//
 
 //  Chiediamo all'utente di scegliere pari o dispari e inserire un numero da 1 a 5  ---------- OK
@@ -54,16 +50,20 @@ console.log(randomNumber);
 // } else {
 //   console.log("hai scelto dispari");
 // }
-
-function P_or_D(scegli) {
-  if (scegli === "pari" || scegli === "dispari") {
-    if (numero >= 1 && numero <= 5) {
-      console.log(prompt("hai scelto" + scegli + "e il numero" + numero));
-    } else {
-      console.log(prompt("numero non valido"));
-    }
-  }
-}
-
 let scegli = prompt("inserisci un numero pari o dispari ");
 let numero = parseInt(prompt("inserisci un numero da 1 a 5 "));
+let risultato = numero % 2 === 0;
+
+if (scegli === "pari" || scegli === "dispari") {
+  if (numero >= 1 && numero <= 5) {
+    if ((scelta = risultato)) {
+      console.log("hai vinto");
+    } else {
+      console.log("hai perso");
+    }
+  } else {
+    console.log("numero non valido");
+  }
+} else {
+  console.log("scelta non valida");
+}
